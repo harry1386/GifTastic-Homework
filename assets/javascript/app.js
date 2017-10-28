@@ -27,9 +27,9 @@ $(".add-name").on("click", function(event) {
 	renderButtons();
 });
 
-function displayAthlete() {
+function displayAthlete(currentAthlete) {
 
-	var athlete = $(this).attr("data-person");
+	var athlete = $(currentAthlete).attr("data-person");
 	var queryURL =  "https://api.giphy.com/v1/gifs/search?api_key=870e05608b1f4f57906edb3144c445bc&q=" + athlete + "&limit=10&offset=0&rating=PG-13&lang=en";
 
         $.ajax({
@@ -74,8 +74,8 @@ function displayAthlete() {
     });
 	}
 
- $(".athlete").on("click", function(gifs){
-        displayAthlete();
+ $(".athlete").on("click", function(event){
+        displayAthlete(event.currentTarget);
       })
 
 
