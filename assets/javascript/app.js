@@ -76,6 +76,7 @@ function displayAthlete(currentAthlete) {
 
  $(".athlete").on("click", function(event){
         displayAthlete(event.currentTarget);
+        $(".item").empty();
       })
 
 
