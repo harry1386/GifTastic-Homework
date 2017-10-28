@@ -1,0 +1,18 @@
+body {
+	background-image: url(../canvas-texture-paper.jpg);
+}
+
+.athlete {
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.item {
+	margin-top: 15px;
+}
+
+#arimg {
+	margin-top: 14px;
+	margin-left: 25px;
+	width: 325px;
+}
